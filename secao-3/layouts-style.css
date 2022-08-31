@@ -9,6 +9,7 @@ body{
     height: 500px;
     background-position: right center;
     background-size: cover;
+    border-top: 1px solid transparent;
 }
 
 .hero-content{
@@ -23,6 +24,29 @@ body{
     text-shadow: 3px 3px 2px #333;
 }
 
+.hero nav ul{
+    text-align: right;
+    margin: 15px 100px 0 0;
+}
+
+.hero nav li{
+    display: inline-block;
+    list-style: none;
+    border: 1px solid white;
+}
+
+.hero nav a{
+    background-color: rgba(0, 0, 0, 0.3);
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+
 main{
     width: 80%;
     margin: auto;
@@ -35,8 +59,23 @@ main{
 }
 
 .art-title h2{
-    background-color: rgb(241, 241, 241);
-    border-bottom: solid 3px rgb(156,156,156);
+    background-color: rgb(228, 228, 228);
+    border-bottom: solid 3px rgb(192, 192, 192);
     padding: 10px;
+    margin-top: 0;
 }
+
+.footer{
+    height: 60px;
+    background-color: rgb(87, 86, 86);
+    color: white;
+    margin-top: 15px;
+    font-size: 14px;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+    line-height: 60px;
+
+}
+
+
 
