@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+            background: beige;
+            text-align: center;
+        }
+
+        th{
+            background: rgb(138, 126, 24);
+            border: 2px solid chocolate;
+            padding: 15px;
+        }
+
+        td{
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <table> <!--Não se pode adicionar numero de setores diferentes em cada linha ou coluna, por exempplo, 3 linhas com 2 colunas, mas apenas 5 setores, o correto é seis-->
+        <tr>
+            <td>1A</td><td>1B</td>
+        </tr>
+        <tr>
+            <td>2A</td><td>2B</td>
+        </tr>
+        <tr>
+            <td>3A</td><td>3B</td>
+        </tr>
+    </table>
+
+    <table> <!--Para usar esse número diferente dos estabelecidos é preciso usar duas tags, 1 para cada direção-->
+        <tr>
+            <td rowspan="2">1A</td><td>1B</td>
+        </tr>
+        <tr>
+            <td>2B</td>
+        </tr>
+        <tr>
+            <td colspan="2">3A</td>
+        </tr>
+    </table>
+
+    <table>
+        <caption>Tabela de preços de cursos</caption>
+        <thead>
+            <tr>
+                <th>Área</th>
+                <th>Curso</th>
+                <th>Investimento</th>
+            </tr>
+        </thead>
+        
+        <tfoot>
+            <tr>
+                <td colspan="3">Valores sujeitos a alterações sem previo aviso</td>
+            </tr>
+        </tfoot>
+
+        <tbody>
+            <tr>
+                <td rowspan="3">Design</td>
+                <td>InDesign</td>
+                <td>R$ 1.000,00</td>
+            </tr>
+            <tr>
+                
+                <td>Photoshop</td>
+                <td>R$ 1.200,00</td>
+            </tr>
+            <tr>
+              
+                <td>Ilustrador</td>
+                <td>R$ 1.550,00</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Development</td>
+                <td>HTML</td>
+                <td>R$ 1.000,00</td>
+            </tr>
+            <tr>
+                
+                <td>CSS</td>
+                <td>R$ 1.500,00</td>
+            </tr>
+            <tr>
+                
+                <td>JAVA</td>
+                <td>R$ 2.000,00</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</body>
+</html>
