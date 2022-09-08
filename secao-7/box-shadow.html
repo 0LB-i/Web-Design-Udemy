@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow</title>
+
+    <style>
+        #sh{
+            background: green;
+            width: 200px;
+            height: 200px;
+            margin: 50px auto;
+            box-shadow: 20px 0 0 rgb(99, 97, 97);
+        }
+
+        #sh2{
+            background: red;
+            width: 200px;
+            height: 200px;
+            margin: 50px auto;
+
+            border-radius: 15%;
+            box-shadow: 20px 50px 0 rgb(99, 97, 97);
+        }
+
+        #sh3{
+            background: red;
+            width: 200px;
+            height: 200px;
+            margin: 50px auto;
+
+            border-radius: 15%;
+            box-shadow: 20px 50px 10px rgb(99, 97, 97); /*O terceiro valor muda a opacidade da sombra*/
+        }
+
+        #sh4{
+            background: blue;
+            width: 200px;
+            height: 200px;
+            margin: 50px auto;
+
+            border-radius: 15%;
+            box-shadow: 20px 50px 10px 20px rgb(99, 97, 97); /*O quarto valor muda o tamanho da sombra*/
+        }
+
+        #sh5{
+            background: blue;
+            width: 200px;
+            height: 200px;
+            margin: 150px auto;
+
+            border-radius: 15%;
+            box-shadow: 20px 50px 10px 20px rgb(99, 97, 97),
+            -20px -15px 5px 30px red; /*é possível colocar multiplas sombras*/
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS efeitos</h1>
+
+    <div id="sh"></div>
+
+    <div id="sh2"></div>
+
+    <div id="sh3"></div>
+
+    <div id="sh4"></div>
+
+    <div id="sh5"></div>
+</body>
+</html>
