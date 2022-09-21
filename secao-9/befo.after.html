@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before e After</title>
+
+    <style>
+        div{
+            border: 3px solid red;
+            padding: 25px;
+        }
+
+        div::before{
+            content: "Before: ";
+            background: #ccc;
+        }
+
+        div::after{
+            content: " -After.";
+            background: #ccc;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Before, after e Content</h1>
+
+    <div>texto prncipal da div</div>
+
+    <article>
+        <h3>
+            titulo
+        </h3>
+        <p>
+            paragrafo <a href="#">apena um link com<b> negrito</b></a>
+        </p>
+        <p>
+            paragrafo <a href="#">apena um link com<b> negrito</b></a>
+        </p>
+        <p>
+            paragrafo <a href="#">apena um link com<b> negrito</b></a>
+        </p>
+    </article>
+
+    <ul>
+        <li><a href="#">Link falso</a></li>
+        <li><a href="#">Link falso</a></li>
+        <li><a href="http://serfrontend.com" target="_blank">Link falso</a></li>
+        <li><a href="../secao-7/transicoes-suaves.html" title="vejo o exercicio anterior">Link falso</a></li>
+        <li><a href="asdsad.pdf">Link falso</a></li>
+    </ul>
+</body>
+</html>
