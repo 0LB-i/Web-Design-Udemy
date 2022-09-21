@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+
+    <style>
+        .div1{
+            width: 150px;
+            height: 150px;
+            background: red;
+            transform: translate(50px, 20px);/*O trasform usa a porcentagem de referência a si mesmo*/
+        }
+
+        /*Tanto o position relative quanto o trasform, preservam a localização base*/
+
+        .div2{
+            width: 150px;
+            height: 150px;
+            background: blue;
+            position: relative; /*relative susa a porcentagem de referância ao pai*/
+            left: 50%;
+        }
+
+        .div3{
+            width: 50%;
+            overflow: hidden;
+            border: solid 2px black;
+        }
+
+        .div3-interna{
+            background: yellow;
+            transform: translateX(80%);
+        }
+
+        .div4{
+            width: 50%;
+            overflow: hidden;
+            border: solid 2px black;
+        }
+
+        .div4-interna{
+            background: yellow;
+            transform: rotate(180deg);  /*deg é graus em rotação*/
+        }
+
+        .div5{
+            width: 50%;
+            overflow: hidden;
+            border: solid 2px black;
+        }
+
+        .div5-interna{
+            background: yellow;
+            transform: rotate(20deg);
+            transform-origin: left; /*a onde começa o efeito trasform, sem isso ele gira por padrão no centro*/
+        }
+
+        .div6{
+            width: 50%;
+            overflow: hidden;
+            border: solid 2px black;
+        }
+
+        .div6-interna{
+            background: yellow;
+            transform: rotate(20deg) translateX(200px);/*primeiro ele rotaciona e deposi ele faz o translate dentro do próprio eixo X, e não o dá página*/
+        }
+
+        .div7{
+            width: 50%;
+            overflow: hidden;
+            border: solid 2px black; 
+        }
+        .div7-interna{
+            background: yellow;
+            transform: translateX(10px) rotate(20deg);/*aqui primeiro fez o translate e depois rotacionou*/
+        }
+
+        .div8{
+            width: 100px;
+            height: 100px;
+            background: orange;
+            transform: skewX(10deg); /*skew distorce o objeto*/
+        }
+
+        .div9{
+            width: 100px;
+            height: 100px;
+            background: blue;
+            transform: scaleX(2) translateX(50%);
+            transition: transform .5s;
+        }
+        .div9:hover{
+            transform: scaleX(4);
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="div1">Div 1</div>
+    <div class="div2">Div 2</div>
+    <hr>
+    <div class="div3">
+        <div class="div3-interna">
+            conteúdo qualquer
+        </div>
+        <p>
+            ivamus tellus ex, rutrum quis mauris a, rhoncus vulputate metus. Nam risus turpis, ultricies nec tellus sed, hendrerit dapibus lectus. Donec ullamcorper convallis diam vel blandit.
+        </p>
+    </div>
+    <hr>
+    <div class="div4">
+        <div class="div4-interna">
+            conteúdo qualquer
+        </div>
+        <p>
+            ivamus tellus ex, rutrum quis mauris a, rhoncus vulputate metus. Nam risus turpis, ultricies nec tellus sed, hendrerit dapibus lectus. Donec ullamcorper convallis diam vel blandit.
+        </p>
+    </div>
+    <hr>
+    <div class="div5">
+        <div class="div5-interna">
+            conteúdo qualquer
+        </div>
+        <p>
+            ivamus tellus ex, rutrum quis mauris a, rhoncus vulputate metus. Nam risus turpis, ultricies nec tellus sed, hendrerit dapibus lectus. Donec ullamcorper convallis diam vel blandit.
+        </p>
+    </div>
+    <hr>
+    <div class="div6">
+        <div class="div6-interna">
+            conteúdo qualquer
+        </div>
+        <p>
+            ivamus tellus ex, rutrum quis mauris a, rhoncus vulputate metus. Nam risus turpis, ultricies nec tellus sed, hendrerit dapibus lectus. Donec ullamcorper convallis diam vel blandit.
+        </p>
+    </div>
+    <hr>
+    <div class="div7">
+        <div class="div7-interna">
+            conteúdo qualquer
+        </div>
+        <p>
+            ivamus tellus ex, rutrum quis mauris a, rhoncus vulputate metus. Nam risus turpis, ultricies nec tellus sed, hendrerit dapibus lectus. Donec ullamcorper convallis diam vel blandit.
+        </p>
+    </div>
+    <hr>
+    <div class="div8">
+        div 8
+    </div>
+    <div class="div9">
+        div 9
+    </div>
+</body>
+</html>

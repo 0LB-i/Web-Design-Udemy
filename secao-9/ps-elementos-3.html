@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo elementos</title>
+
+    <style>
+        p::first-letter{
+            float: left;
+            font-size: 3em;
+            line-height: 1;
+            display: block;
+            margin-right: .1em;
+        }
+
+        p::first-line{
+            color: red;
+        }
+
+        p::-moz-selection{ /*O moz é para ele funcionar no mozilla*/
+            background: yellow;
+        }
+        p::selection{
+            background: yellow;
+        }
+    </style>
+</head>
+<body>
+    <p>Vivamus tellus ex, rutrum quis mauris a, rhoncus vulputate metus. Nam risus turpis, ultricies nec tellus sed, hendrerit dapibus lectus. Donec ullamcorper convallis diam vel blandit. Sed quis turpis id dui feugiat mollis. Phasellus at vehicula sapien. Sed porttitor quis odio vel mollis. Duis ut est tempor, porta risus eget, imperdiet mauris. Cras tincidunt leo nunc, nec sodales nunc vehicula in.</p>
+    <p>Vivamus tellus ex, rutrum quis mauris a, rhoncus vulputate metus. Nam risus turpis, ultricies nec tellus sed, hendrerit dapibus lectus. Donec ullamcorper convallis diam vel blandit. Sed quis turpis id dui feugiat mollis. Phasellus at vehicula sapien. Sed porttitor quis odio vel mollis. Duis ut est tempor, porta risus eget, imperdiet mauris. Cras tincidunt leo nunc, nec sodales nunc vehicula in.</p>
+    <p>Vivamus tellus ex, rutrum quis mauris a, rhoncus vulputate metus. Nam risus turpis, ultricies nec tellus sed, hendrerit dapibus lectus. Donec ullamcorper convallis diam vel blandit. Sed quis turpis id dui feugiat mollis. Phasellus at vehicula sapien. Sed porttitor quis odio vel mollis. Duis ut est tempor, porta risus eget, imperdiet mauris. Cras tincidunt leo nunc, nec sodales nunc vehicula in.</p>
+    <p>Vivamus tellus ex, rutrum quis mauris a, rhoncus vulputate metus. Nam risus turpis, ultricies nec tellus sed, hendrerit dapibus lectus. Donec ullamcorper convallis diam vel blandit. Sed quis turpis id dui feugiat mollis. Phasellus at vehicula sapien. Sed porttitor quis odio vel mollis. Duis ut est tempor, porta risus eget, imperdiet mauris. Cras tincidunt leo nunc, nec sodales nunc vehicula in.</p>
+    <p>Vivamus tellus ex, rutrum quis mauris a, rhoncus vulputate metus. Nam risus turpis, ultricies nec tellus sed, hendrerit dapibus lectus. Donec ullamcorper convallis diam vel blandit. Sed quis turpis id dui feugiat mollis. Phasellus at vehicula sapien. Sed porttitor quis odio vel mollis. Duis ut est tempor, porta risus eget, imperdiet mauris. Cras tincidunt leo nunc, nec sodales nunc vehicula in.</p>
+</body>
+</html>
